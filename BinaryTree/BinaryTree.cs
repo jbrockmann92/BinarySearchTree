@@ -8,19 +8,12 @@ namespace BinaryTree
 {
     class BinaryTree
     {
-        //Member Variables (HAS A)
         Node start;
 
-        //Constructor
-
-        //Member Methods (CAN DO)
         public void Add(int value)
         {
-            //Lower than previous = left; Higher = right
-            //First node has to have its own value, but is not linked from the previous one. Null test probably, like the whiteboard
             Node node = new Node(value);
 
-            //Set node's link to something
             if (start == null)
             {
                 start = node;
@@ -31,7 +24,6 @@ namespace BinaryTree
                 while (true)
                 {
                     if (node.value >= current.value)
-                        //Change to greater than
                     {
                         if (current.higher == null)
                         {
@@ -65,11 +57,8 @@ namespace BinaryTree
             Node test = new Node(value);
 
             {
-                //Lower than previous = left; Higher = right
-                //First node has to have its own value, but is not linked from the previous one. Null test probably, like the whiteboard
                 Node node = new Node(value);
 
-                //Set node's link to something
                 if (start == null)
                 {
                     start = node;
@@ -80,7 +69,6 @@ namespace BinaryTree
                     while (true)
                     {
                         if (node.value > current.value)
-                        //Change to greater than
                         {
                             if (current.higher == null)
                             {
